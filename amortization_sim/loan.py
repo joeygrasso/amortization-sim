@@ -20,7 +20,7 @@ class Loan():
         return monthly_payment
 
     def calculate_monthly_rate(self):
-        return self.rate / 12   # months per year
+        return self.rate / 12   # 12 == months per year
 
     def calculate_monthly_interest(self, balance):
         return balance * self.calculate_monthly_rate()
